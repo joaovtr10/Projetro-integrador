@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.possicao{
+    position: relative;
+    top: 75px;
+}
+.nome-senha,.botao,.links{
+    margin: 50px;
+    text-align: center;
+    position: relative;
+}
+.botao{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 42.5%;
+}
+
