@@ -11,10 +11,20 @@ label,input,a{
 .possicao{
     position: absolute;
     left: 41vw;
-    top: 25vh;
+    top: 35vh;
 }
 
 .botao{
     position: relative;
     left: 21%;
+}
+
+.links{
+    position: relative;
+    left: 15%;
+}
+
+.cadastrar{
+    position: relative;
+    left: 4%;
 }
