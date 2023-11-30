@@ -4,19 +4,22 @@
 }
 
 label,input,a{
-    margin: 15px;
+    margin: 25px;
     
 }
 
 .possicao{
     position: absolute;
-    left: 41vw;
-    top: 35vh;
+    left: 37vw;
+    top: 30vh;
+    font-size: 25px;
 }
 
 .botao{
     position: relative;
-    left: 21%;
+    left: 13%;
+    width: 175px;
+    height: 45px;
 }
 
 .links{
@@ -27,4 +30,16 @@ label,input,a{
 .cadastrar{
     position: relative;
     left: 4%;
+}
+
+.nome-senha input{
+    width: 250px;
+    height: 25px;
+}
+
+.login{
+    position: relative;
+    left: 42.5%;
+    top: 15vh;
+    font-size: 50px;
 }
