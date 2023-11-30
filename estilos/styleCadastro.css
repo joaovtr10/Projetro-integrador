@@ -12,12 +12,18 @@
     margin: 25px;
     position: relative;
     left: 15%;
+    height: 45px;
 }
 
 .possicao{
     position: absolute;
-    left: 39vw;
-    top: 15vh;
+    left: 35vw;
+    top: 18vh;
 }
 
-
+.cadastre-se{
+    font-size: 40px;
+    position: relative;
+    left: 2.5vw ;
+    bottom: 8vh;
+}
