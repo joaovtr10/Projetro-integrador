@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.informacoes input,label,.fimCadastro{
+    margin: 15px;
+    font-size: 25px;
+}
+
+.fimCadastro{
+    margin: 25px;
+    position: relative;
+    left: 15%;
+}
+
+.possicao{
+    position: absolute;
+    left: 39vw;
+    top: 15vh;
+}
+
+
