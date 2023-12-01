@@ -1,3 +1,34 @@
+/* Parte de cima da página */
+.tarja{
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 193px;
+    width: 1500px;
+}
+
+.nomeDoProjeto{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    z-index: 1;
+    text-align: center;   
+}
+
+.lista{
+    color: blue;
+    position: absolute;
+    left: 80%;
+    font-size: 20px;
+
+}
+
+
 /* Configuração da tabela */
 th{
     width: 50px;
@@ -12,7 +43,7 @@ td{
 table{
     position: absolute;
     left: 12%;
-    top: 30%;
+    top: 33%;
 }
 
 /* Configuração da caixa de pesquisa */
