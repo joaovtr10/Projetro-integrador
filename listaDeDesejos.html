@@ -9,8 +9,27 @@
 </head>
 <body>
 
-    <main>
+    
+    <header>
+    
+        <img src="recursos/Imagem do Logo-Game-For-Gamers.jpg" id="iconLogo">
 
+        <!--Caixa de pesquisa-->
+        <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." /><br>
+            <button id="btnBusca">Buscar</button>
+        </div>
+        <div class="cantoDireito">
+            <div class="lista"><a href="menu.html">Menu</a></div>
+            <a href="login.html"><img src="recursos/Imagen Pessoa.png" id="iconPessoa"></a>
+        </div>
+    </header>
+
+
+    
+    <main>
+        
+       <!--Tabela da lsita de desejos-->
         <table border="1">
             <tr>
                 <th>
@@ -47,6 +66,7 @@
 
     </main>
 
+    <!--Scrip para excluir um item da lista de desejos-->
   <script>
     function excluirItem(botao) {
       var listItem = botao.parentNode;
