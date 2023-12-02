@@ -1,11 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Parte de cima da página */
 .tarja{
-    background-color: white;
     position: absolute;
-    top: 0%;
-    left: 0%;
     height: 193px;
-    width: 1500px;
 }
 
 .nomeDoProjeto{
@@ -13,17 +14,17 @@
     color: white;
     width: 150px;
     height: 150px;
-    position: absolute;
+    position: relative;
     top: 3%;
     left: 1%;
-    z-index: 1;
     text-align: center;   
 }
 
 .lista{
     color: blue;
-    position: absolute;
-    left: 80%;
+    position: relative;
+    left: 89vw;
+    bottom: 20vh;
     font-size: 20px;
 
 }
@@ -50,8 +51,8 @@ table{
 
 #divBusca {
     position: absolute;
-    right: 20%;
-    top: 20%;
+    left: 70vw ;
+    bottom: 0.1%;
 
 }
 
@@ -62,6 +63,9 @@ table{
 
 #btnBusca {
     height: 21px;
+    position: relative;
+    left: 103%;
+    bottom: 20px;
 }
 
 
