@@ -1,3 +1,49 @@
-.botaoExcluir img{
-    width: 20px;
-}
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        position: absolute;
+        left: 36vw;
+        top: 33vh;
+        margin: 5vh;
+    }
+
+    td{
+        width: 200px;
+        font-size: 20px;
+    }
+    
+    tr {
+        width: 100px;
+        font-size: 20px;
+    }
+
+
+    /* Estilo padrão para o botão de excluir (invisível) */
+    .botaoExcluir {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .botaoExcluir img {
+        width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+      }
+  
+      /* Estilo quando o mouse passa sobre o item de lista */
+      li:hover .botaoExcluir {
+        display: inline-block;
+      }
+  
+      /* Estilo para a lista e os itens de lista */
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      li {
+        margin: 5px 0;
+      }
+
