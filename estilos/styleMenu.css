@@ -10,15 +10,8 @@
     
 }
 
-.nomeDoProjeto{
-    background-color: black;
-    color: white;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    top: 3%;
-    left: 1%;
-    text-align: center;   
+.nomeDoProjeto img{
+
 }
 
 .lista{
@@ -53,7 +46,6 @@ table{
 #divBusca {
     position: absolute;
     left: 70vw ;
-    bottom: -5vh ;
 
 }
 
