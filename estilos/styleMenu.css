@@ -10,14 +10,16 @@
     
 }
 
-.nomeDoProjeto img{
-
+.tarja img{
+    width: 10%;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .lista{
     position: absolute;
     left: 89vw;
-    bottom: 8vh;
+    bottom: 3vh;
     font-size: 20px;
     width: 150px;
 }
@@ -46,6 +48,7 @@ table{
 #divBusca {
     position: absolute;
     left: 70vw ;
+    bottom: -5vh;
 
 }
 
@@ -68,10 +71,9 @@ table{
     font-size: 35px;
 }
  
-.tarja img{
+#iconPessoa{
     width: 10%;
     position: relative;
-    left: 90vw;
-    bottom: 21vh;
+    left: 77vw;
     
 }
