@@ -4,22 +4,37 @@
 }
 
 /* Parte de cima da página */
-.tarja{
-    position: absolute;
+header{
+    position: relative;
     height: 193px;
-    
 }
 
-.nomeDoProjeto img{
+#iconLogo{
+    width: 10%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
 
+.cantoDireito{
+    height: 10vh;
+    width: 10vw;
+    position: relative;
+    left: 3vw;
+    bottom: 20vh;
 }
 
 .lista{
     position: absolute;
-    left: 89vw;
-    bottom: 8vh;
+    left: 86vw;
+    top: 20vh;
     font-size: 20px;
-    width: 150px;
+    width: 130px;
+}
+
+#iconPessoa{
+    width: 90%;
+    position: absolute;
+    left: 85.7vw;
 }
 
 
@@ -37,7 +52,7 @@ td{
 table{
     position: absolute;
     left: 16vw;
-    top: 33vh;
+    top: 40vh;
     margin: 5vh;
 }
 
@@ -46,6 +61,7 @@ table{
 #divBusca {
     position: absolute;
     left: 70vw ;
+    bottom: -8vh;
 
 }
 
@@ -56,22 +72,14 @@ table{
 
 #btnBusca {
     height: 21px;
-    position: relative;
+    position: absolute;
     left: 103%;
-    bottom: 20px;
+    top: -2px;
 }
 
 .categorias{
     position: absolute;
-    top: 30vh;
+    top: 36vh;
     left: 1vh;
     font-size: 35px;
-}
- 
-.tarja img{
-    width: 10%;
-    position: relative;
-    left: 90vw;
-    bottom: 21vh;
-    
 }
