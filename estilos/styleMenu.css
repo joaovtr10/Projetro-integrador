@@ -7,6 +7,7 @@
 .tarja{
     position: absolute;
     height: 193px;
+    
 }
 
 .nomeDoProjeto{
@@ -21,12 +22,11 @@
 }
 
 .lista{
-    color: blue;
-    position: relative;
+    position: absolute;
     left: 89vw;
-    bottom: 20vh;
+    bottom: 8vh;
     font-size: 20px;
-
+    width: 150px;
 }
 
 
@@ -43,8 +43,9 @@ td{
 
 table{
     position: absolute;
-    left: 12%;
-    top: 33%;
+    left: 16vw;
+    top: 33vh;
+    margin: 5vh;
 }
 
 /* Configuração da caixa de pesquisa */
@@ -52,7 +53,7 @@ table{
 #divBusca {
     position: absolute;
     left: 70vw ;
-    bottom: 0.1%;
+    bottom: -5vh ;
 
 }
 
@@ -68,7 +69,17 @@ table{
     bottom: 20px;
 }
 
-
-  
+.categorias{
+    position: absolute;
+    top: 30vh;
+    left: 1vh;
+    font-size: 35px;
+}
  
-
+.tarja img{
+    width: 10%;
+    position: relative;
+    left: 90vw;
+    bottom: 21vh;
+    
+}
