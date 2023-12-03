@@ -16,16 +16,16 @@
 }
 
 .cantoDireito{
-    height: 10vh;
+    height: 25vh;
     width: 10vw;
     position: relative;
-    left: 3vw;
+    left: 86vw;
     bottom: 20vh;
 }
 
 .lista{
     position: absolute;
-    left: 86vw;
+    left: 2.7vw;
     top: 20vh;
     font-size: 20px;
     width: 130px;
@@ -34,7 +34,7 @@
 #iconPessoa{
     width: 90%;
     position: absolute;
-    left: 85.7vw;
+    
 }
 
     /* Configuração da Tabela */
