@@ -1,0 +1,83 @@
+    /* Modificação do body */
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Configuração do topo do site */
+    header{
+    position: relative;
+    height: 193px;
+}
+
+#iconLogo{
+    width: 10%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.cantoDireito{
+    height: 25vh;
+    width: 10vw;
+    position: relative;
+    left: 86vw;
+    bottom: 20vh;
+}
+
+.lista{
+    position: absolute;
+    left: 2.7vw;
+    top: 20vh;
+    font-size: 20px;
+    width: 130px;
+}
+
+#iconPessoa{
+    width: 90%;
+    position: absolute;
+    
+}
+
+    /* Configuração da Tabela */
+    table{
+        position: absolute;
+        text-align: justify;
+        left: 33vw;
+        top: 33vh;
+        margin: 5vh;
+        width: 65vh;
+    }
+
+    tr {
+        width: 100px;
+        font-size: 20px;
+    }
+
+
+    /* Estilo padrão para o botão de excluir (invisível) */
+    .botaoExcluir {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .botaoExcluir img {
+        width: 20px; 
+      }
+  
+      /* Estilo quando o mouse passa sobre o item de lista */
+      li:hover .botaoExcluir {
+        display: inline-block;
+      }
+  
+      /* Estilo para a lista e os itens de lista */
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      li {
+        margin: 5px 0;
+      }
+
+    

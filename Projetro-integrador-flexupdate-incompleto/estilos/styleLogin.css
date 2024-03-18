@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+label,input,a{
+    margin: 25px;
+    
+}
+
+.possicao{
+    position: absolute;
+    left: 38vw;
+    top: 25vh;
+    font-size: 25px;
+}
+
+.botao{
+    position: relative;
+    left: 13%;
+    width: 175px;
+    height: 45px;
+}
+
+.links{
+    position: relative;
+    left: 15%;
+}
+
+.cadastrar{
+    position: relative;
+    left: 4%;
+}
+
+.nome-senha input{
+    width: 250px;
+    height: 25px;
+}
+
+.login{
+    position: relative;
+    left: 5.5vw;
+    bottom: 8vh;
+    font-size: 50px;
+}

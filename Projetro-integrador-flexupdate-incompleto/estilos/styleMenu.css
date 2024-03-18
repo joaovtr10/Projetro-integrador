@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Parte de cima da página */
+header{
+    height: 193px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#iconLogo{
+     width: 12%;
+    height: 60%; 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.cantoDireito{
+    align-self: flex-start;
+    display: flex;
+    height: 20vh;
+    width: 15vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:baseline;
+}
+
+.lista{
+    font-size: 20px;
+    width: 130px;
+}
+
+#iconPessoa{
+    width: 50%;
+    margin-left: 10px;
+}
+
+
+/* Configuração da tabela */
+th{
+    width: 50px;
+    height: 50px;
+}
+
+td{
+    width: 200px;
+    font-size: 20px;
+}
+
+table{
+    position: absolute;
+    left: 16vw;
+    top: 40vh;
+    margin: 5vh;
+}
+
+/* Configuração da caixa de pesquisa */
+
+#divBusca {
+    position: absolute;
+    left: 70vw ;
+    bottom: -8vh;
+
+}
+
+#divBusca input {
+    width: 200px;
+    height: 15px;
+}
+
+#btnBusca {
+    height: 21px;
+    position: absolute;
+    left: 103%;
+    top: -2px;
+}
+
+.categorias{
+    position: absolute;
+    top: 36vh;
+    left: 1vh;
+    font-size: 35px;
+}
