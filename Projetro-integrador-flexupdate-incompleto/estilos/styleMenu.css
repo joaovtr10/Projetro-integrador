@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 /* Parte de cima da página */
@@ -9,11 +10,12 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 #iconLogo{
-     width: 12%;
-    height: 60%; 
+    width: 13vw;
+    height: 25vh; 
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -26,16 +28,17 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items:baseline;
+    margin: 2vh -5vw 0 0;
 }
 
 .lista{
     font-size: 20px;
-    width: 130px;
+    width: 10vw;
 }
 
 #iconPessoa{
     width: 50%;
-    margin-left: 10px;
+    
 }
 
 
@@ -60,22 +63,24 @@ table{
 /* Configuração da caixa de pesquisa */
 
 #divBusca {
-    position: absolute;
-    left: 70vw ;
-    bottom: -8vh;
-
+    display: flex;
 }
 
 #divBusca input {
-    width: 200px;
-    height: 15px;
+    width: 250px;
+    height: 17.5px;
+    border-radius: 4px;
 }
 
 #btnBusca {
     height: 21px;
-    position: absolute;
-    left: 103%;
-    top: -2px;
+    width: 35px;
+    overflow-y: hidden;
+    border-radius: 4px;
+}
+
+#btnBusca img{
+    width: 60%;
 }
 
 .categorias{
