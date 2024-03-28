@@ -5,7 +5,6 @@
 
 label,input,a{
     margin: 25px;
-    
 }
 
 .possicao{
@@ -13,11 +12,13 @@ label,input,a{
     left: 38vw;
     top: 25vh;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .botao{
-    position: relative;
-    left: 13%;
+    align-self: center;
     width: 175px;
     height: 45px;
 }

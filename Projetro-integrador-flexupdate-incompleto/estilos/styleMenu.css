@@ -1,12 +1,12 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 /* Parte de cima da página */
 header{
-    height: 193px;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,29 +16,33 @@ header{
 #iconLogo{
     width: 13vw;
     height: 25vh; 
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 10px;
 }
 
 .cantoDireito{
     align-self: flex-start;
     display: flex;
-    height: 20vh;
-    width: 15vw;
+    height: 28vh;
+    width: 10vw;
     flex-direction: column;
-    justify-content: space-around;
-    align-items:baseline;
-    margin: 2vh -5vw 0 0;
+    margin: 2vh 1vw 0 0;
+    
 }
 
 .lista{
-    font-size: 20px;
-    width: 10vw;
+    font-size: 3vh;
+    height: 7vh;
+    width: 9.6vw;
+}
+
+#linkPessoaIcon{
+    align-self: center;
 }
 
 #iconPessoa{
-    width: 50%;
-    
+    width: 100%;
+    height: 17vh;
 }
 
 
@@ -67,7 +71,7 @@ table{
 }
 
 #divBusca input {
-    width: 250px;
+    width: 30vw;
     height: 17.5px;
     border-radius: 4px;
 }
@@ -83,9 +87,62 @@ table{
     width: 60%;
 }
 
-.categorias{
+
+/* Menu dropdown */
+
+:root{
+    --cor-Fundo: rgb(0, 0, 0);
+    --cor-hover: rgb(33, 107, 26);
+    --cor-primaria: white;
+}
+
+.dp-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-Fundo);
+}
+
+ul {
+    background-color: var( --cor-Fundo);
+
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*Sub menu*/
+
+.dp-menu ul ul {
+    display: none;
+    left: 0;
     position: absolute;
-    top: 36vh;
-    left: 1vh;
-    font-size: 35px;
+}
+
+.dp-menu ul li:hover ul {
+    display: block;
+}
+
+.dp-menu ul ul {
+    width: 150px;
+}
+
+.dp-menu ul ul li a {
+    display: block;
 }

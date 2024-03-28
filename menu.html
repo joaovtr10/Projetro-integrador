@@ -5,10 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/styleMenu.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
+
+    <nav class="dp-menu">
+        <ul>
+            <li><a href="/menu.html">Home</a></li>
+            <li><a href="#">categorias</a>
+                <ul>
+                    <li><a href="#">cat1</a></li>
+                    <li><a href="#">cat2</a></li>
+                    <li><a href="#">cat3</a></li>
+                </ul>
+
+            </li>
+            <li><a href="#">Te</a></li>
+        </ul>
+    </nav>
+
     <header>
 
         <img src="recursos/Imagem do Logo-Game-For-Gamers.jpg" id="iconLogo">
@@ -16,28 +34,15 @@
         <!--Caixa de pesquisa-->
         <div id="divBusca">
             <input type="text" id="txtBusca" placeholder="Buscar..." /><br>
-            <button id="btnBusca">Buscar</button>
+            <button id="btnBusca"><img src="recursos/lupa.png" alt="Imagem de lupa"></button>
         </div>
         <div class="cantoDireito">
+            <a href="login.html" id="linkPessoaIcon" ><img src="recursos/Imagen Pessoa.png" id="iconPessoa"></a>
             <div class="lista"><a href="listaDeDesejos.html">Lista de desejos</a></div>
-            <a href="login.html"><img src="recursos/Imagen Pessoa.png" id="iconPessoa"></a>
         </div>
     </header>
 
     <main>
-
-        <div class="categorias">
-
-            <a href="">categoria 1</a><br>
-            <a href="">categoria 2</a><br>
-            <a href="">categoria 3</a><br>
-            <a href="">categoria 4</a><br>
-            <a href="">categoria 5</a><br>
-            <a href="">categoria 6</a><br>
-            <a href="">categoria 7</a><br>
-            <a href="">categoria 8</a><br>
-
-        </div>
 
         <!--Tabela de jogos-->
         <table border="1">
