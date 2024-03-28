@@ -36,6 +36,7 @@ ul {
 
 .dp-menu ul li a:hover {
     background-color: var(--cor-hover);
+    
 }
 
 /*Sub menu*/
