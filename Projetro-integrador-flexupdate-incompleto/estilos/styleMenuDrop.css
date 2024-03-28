@@ -1,0 +1,59 @@
+/* Menu dropdown */
+
+:root{
+    --cor-Fundo: rgb(0, 0, 0);
+    --cor-hover: rgb(33, 107, 26);
+    --cor-primaria: white;
+}
+
+.dp-menu .dp-ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dp-menu ul {
+    background-color: var(--cor-Fundo);
+}
+
+ul {
+    background-color: var( --cor-Fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+
+/*Sub menu*/
+
+.dp-menu ul .ulcat {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover .ulcat {
+    display: block;
+}
+
+.dp-menu ul .ulcat {
+    width: 90px;
+}
+
+.dp-menu ul .ulcat li a {
+    display: block;
+}

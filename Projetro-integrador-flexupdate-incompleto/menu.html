@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/styleMenuDrop.css">
     <link rel="stylesheet" href="estilos/styleMenu.css">
-    <link rel="stylesheet" href="media.css">
+
 </head>
 
 <body>
@@ -17,31 +18,38 @@
     <header>
 
         <nav class="dp-menu">
-            <ul>
-                <li><a href="/menu.html">Home</a></li>
-                <li><a href="#">categorias</a>
-                    <ul>
-                        <li><a href="#">cat1</a></li>
-                        <li><a href="#">cat2</a></li>
-                        <li><a href="#">cat3</a></li>
-                    </ul>
+            <ul class="dp-ul">
+                <div>
+                    <li><a href="/Projetro-integrador-flexupdate-incompleto/menu.html">Home</a></li>
+                    <li><a href="#">categorias</a>
+                        <ul class="ulcat">
+                            <li><a href="#">cat1</a></li>
+                            <li><a href="#">cat2</a></li>
+                            <li><a href="#">cat3</a></li>
+                        </ul>
 
-                </li>
-                <li><a href="#">Te</a></li>
+                    </li>
+
+                    <li><a href="/Projetro-integrador-flexupdate-incompleto/listaDeDesejos.html">Lista de desejos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </div>
+
                 <li>
                     <div id="divBusca">
-                        <input type="text" id="txtBusca" placeholder="Buscar..." /><br>
-                        <button id="btnBusca"><img src="recursos/lupa.png" alt="Imagem de lupa"></button>
+                        <div class="flex">
+                            <input type="text" id="txtBusca" placeholder="Buscar..." /><br>
+                            <button id="btnBusca"><img src="recursos/lupa.png" alt="Imagem de lupa"></button>
+                        </div>
                     </div>
                 </li>
+                </div>
+                <div>
+                    <li><a href="/Projetro-integrador-flexupdate-incompleto/cadastro.html">Cadastrar-se</a></li>
+                    <li class="entrar"><a href="/Projetro-integrador-flexupdate-incompleto/login.html">Entrar </a></li>
+                </div>
             </ul>
         </nav>
 
-        <!--Caixa de pesquisa-->
-        <div class="cantoDireito">
-            <a href="login.html" id="linkPessoaIcon"><img src="recursos/Imagen Pessoa.png" id="iconPessoa"></a>
-            <div class="lista"><a href="listaDeDesejos.html">Lista de desejos</a></div>
-        </div>
     </header>
 
     <main>
