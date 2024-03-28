@@ -1,12 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
-    /* Configuração da Tabela */
+/* Configuração da Tabela */
     table {
       position: absolute;
       text-align: justify;
       left: 33vw;
       top: 33vh;
-     
+      margin: 5vh;
       width: 65vh;
+      list-style: none;
     }
 
     tr {
@@ -14,7 +19,7 @@
       font-size: 20px;
     }
 
-    /* Estilo padrão para o botão de excluir (invisível) */
+    /* Estilo para o botão de excluir */
     .botaoExcluir {
       display: none;
       background: none;
