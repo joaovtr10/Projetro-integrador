@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Configuração da Tabela */
+    table {
+      position: absolute;
+      text-align: justify;
+      left: 33vw;
+      top: 33vh;
+      margin: 5vh;
+      width: 65vh;
+      list-style: none;
+    }
+
+    tr {
+      width: 100px;
+      font-size: 20px;
+    }
+
+    /* Estilo para o botão de excluir */
+    .botaoExcluir {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .botaoExcluir img {
+      width: 20px;
+    }
+
+    /* Estilo quando o mouse passa sobre o item de lista */
+    li:hover .botaoExcluir {
+      display: inline-block;
+    }
+
+    /* Estilo para a lista e os itens de lista */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }

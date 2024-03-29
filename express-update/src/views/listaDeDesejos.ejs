@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de desejos</title>
+  <link rel="shortcut icon" href="/resouces/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheets/styleListaDesejos.css">
+  <link rel="stylesheet" href="/stylesheets/styleMenuDrop.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="dp-menu">
+      <ul class="dp-ul">
+        <div>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">categorias</a>
+            <ul class="ulcat">
+              <li><a href="#">cat1</a></li>
+              <li><a href="#">cat2</a></li>
+              <li><a href="#">cat3</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="/listaDeDesejos">Lista de desejos</a>
+          </li>
+          <li><a href="#">Contato</a></li>
+        </div>
+
+        </div>
+        <div>
+          <li><a href="/cadastro">Cadastrar-se</a></li>
+          <li class="entrar"><a href="/login">Entrar </a></li>
+        </div>
+      </ul>
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+    <!--Tabela da lsita de desejos-->
+    <table border="1">
+      <tr>
+        <td>Número</td>
+        <td>Nome</td>
+      </tr>
+      <tr id="linha-1">
+        <th>1</th>
+        <th>
+          <li>
+            Dragon Ball Budokkai Tenkaichi 4
+            <button class="botaoExcluir" onclick="excluirItem1(this)">
+              <img src="/resouces/Lixeira.png" alt="Lixeira">
+            </button>
+          </li>
+        </th>
+      </tr>
+      </tr>
+      <tr id="linha-2">
+        <th>2</th>
+        <th>
+          <li>
+            Resident Evil 4 Remake
+            <button class="botaoExcluir" onclick="excluirItem2(this)">
+              <img src="/resouces/Lixeira.png" alt="Lixeira">
+            </button>
+          </li>
+        </th>
+      </tr>
+      </tr>
+      <tr id="linha-3">
+        <th>3</th>
+        <th>
+          <li>
+            God Of War
+            <button class="botaoExcluir" onclick="excluirItem3(this)">
+              <img src="/resouces/Lixeira.png" alt="Lixeira">
+            </button>
+          </li>
+        </th>
+      </tr>
+      </tr>
+      <tr id="linha-4">
+        <th>4</th>
+        <th>
+          <li>
+            Elden Ring
+            <button class="botaoExcluir" onclick="excluirItem4(this)">
+              <img src="/resources/Lixeira.png" alt="Lixeira">
+            </button>
+          </li>
+        </th>
+      </tr>
+
+  </main>
+
+  <!--Scrip para excluir um item da lista de desejos-->
+  <!--<script>
+        function excluirItem(botao) {
+            var listItem = botao.parentNode;
+            listItem.parentNode.removeChild(listItem);
+        }
+    </script> -->
+
+  <script>
+    function excluirItem1(botao) {
+      const linhaParaRemover = document.querySelector("tr#linha-1");
+      linhaParaRemover.remove();
+    }
+
+    function excluirItem2(botao) {
+      const linhaParaRemover = document.querySelector("tr#linha-2");
+      linhaParaRemover.remove();
+    }
+
+    function excluirItem3(botao) {
+      const linhaParaRemover = document.querySelector("tr#linha-3");
+      linhaParaRemover.remove();
+    }
+    
+    function excluirItem4(botao) {
+      const linhaParaRemover = document.querySelector("tr#linha-4");
+      linhaParaRemover.remove();
+    }
+  </script>
+
+</body>
+
+</html>
