@@ -1,6 +1,7 @@
 :root{
     --main-bg-color: rgb(92, 92, 92);
     --sec-bg-color: rgb(141, 141, 141) ;
+    --cor-hover: rgb(33, 107, 26);
 }
 
 *{
@@ -53,13 +54,13 @@ table{
 }
 
 #btnBusca {
-    height: 21px;
+    height: 18px;
     width: 35px;
     overflow-y: hidden;
-    border-radius: 4px;
-    border-color: none;
+    border-radius: 0.30rem;
+    border: none;
 }
 
 #btnBusca img{
-    width: 60%;
+    width: 30%;
 }

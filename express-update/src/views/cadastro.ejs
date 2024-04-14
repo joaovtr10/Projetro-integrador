@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +10,33 @@
 </head>
 <body>
 
-    
+    <main>
+        <div class="possicao">
+            <p class="cadastre-se"><strong>CADASTRE-SE</strong></p>
+            <form>
 
-    <div class="possicao">
-        <p class="cadastre-se"><strong>CADASTRE-SE</strong></p>
-        <form>
+                <div class="informacoes">
 
-            <div class="informacoes">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email"><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email"><br>
+                    <label for="nome">Nome de usuário:</label><br>
+                    <input type="text" name="nome" id="nome"><br>
 
-                <label for="nome">Nome de usuário:</label><br>
-                <input type="text" name="nome" id="nome"><br>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" name="senha" id="senha"><br>
 
-                <label for="senha">Senha:</label><br>
-                <input type="password" name="senha" id="senha"><br>
+                    <label for="confSenha">Confirmar senha:</label><br>
+                    <input type="password" name="confSenha" id="confSenha"><br>
 
-                <label for="confSenha">Confirmar senha:</label><br>
-                <input type="password" name="confSenha" id="confSenha"><br>
+                </div>
 
-            </div>
+                <button type="submit" class="fimCadastro">Concluir cadastro</button>
 
-                <input type="button" value="Concluir cadastro" class="fimCadastro">
-
-        </form>
-    </div>
+            </form>
+        </div>
+    </main>
 
 </body>
+
 </html>
