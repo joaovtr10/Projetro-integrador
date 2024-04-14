@@ -1,45 +1,90 @@
+:root{
+    --main-bg-color: rgb(92, 92, 92);
+    --sec-bg-color: rgb(141, 141, 141) ;
+    --cor-hover: rgb(33, 107, 26);
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-label,input,a{
+body{
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+input{
     margin: 25px;
-    
+    border-radius: 1rem;
+    border: none;
 }
 
 .possicao{
-    position: absolute;
-    left: 38vw;
-    top: 25vh;
+    background-color: var(--sec-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
     font-size: 25px;
 }
 
+.button-pai{
+    display: flex;
+    justify-content: center;
+}
+
 .botao{
-    position: relative;
-    left: 13%;
+    margin: 5px;
     width: 175px;
     height: 45px;
+    border-radius: 1rem;
+    background-color: var(--main-bg-color);
+    border: none;
+}
+
+.botao:hover{
+    transition: 0.1s;
+    background-color: var(--cor-hover);
+    width: 185px;
+    height: 55px;
+    margin: 0px;
 }
 
 .links{
-    position: relative;
-    left: 15%;
+    display: flex;
+    flex-direction: column;
 }
 
 .cadastrar{
     position: relative;
-    left: 4%;
+    left: 1rem;
+}
+
+.nome-senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .nome-senha input{
     width: 250px;
     height: 25px;
+    margin: 2.5px;
+}
+
+.nome-senha input:hover{
+    margin: 0px;
+    width: 255px;
+    height: 30px;
 }
 
 .login{
-    position: relative;
-    left: 5.5vw;
-    bottom: 8vh;
+    margin: 1rem;
     font-size: 50px;
 }

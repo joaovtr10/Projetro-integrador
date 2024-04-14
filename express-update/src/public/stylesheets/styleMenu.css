@@ -1,24 +1,42 @@
+:root{
+    --main-bg-color: rgb(92, 92, 92);
+    --sec-bg-color: rgb(141, 141, 141) ;
+}
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+body{
+    background-color: var(--main-bg-color);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96.3vh;
+}
+
 /* Configuração da tabela */
 th{
+    padding: 5px;
     width: 50px;
     height: 50px;
 }
 
 td{
+    padding: 5px;
     width: 200px;
     font-size: 20px;
+    text-align: center;
 }
 
 table{
-    position: absolute;
-    left: 16vw;
-    top: 40vh;
-    margin: 5vh;
+    background-color: var(--sec-bg-color);
+    padding: 0.75rem;
+    border-radius:1rem ;
 }
 
 /* Configuração da caixa de pesquisa */
@@ -31,7 +49,7 @@ table{
     width: 30vw;
     height: 17.5px;
     border-radius: 4px;
-    border-color: black;
+    border: none;
 }
 
 #btnBusca {
@@ -39,7 +57,7 @@ table{
     width: 35px;
     overflow-y: hidden;
     border-radius: 4px;
-    border-color: black;
+    border-color: none;
 }
 
 #btnBusca img{

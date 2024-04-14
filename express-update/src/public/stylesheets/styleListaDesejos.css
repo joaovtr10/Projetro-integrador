@@ -1,22 +1,45 @@
+:root{
+  --main-bg-color: rgb(92, 92, 92);
+  --sec-bg-color: rgb(141, 141, 141) ;
+  --cor-hover: rgb(33, 107, 26);
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
+body{
+  background-color: var(--main-bg-color);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96.3vh;
+}
+
 /* Configuração da Tabela */
     table {
-      position: absolute;
+      background-color: var(--sec-bg-color);
+      border-radius: 1rem;
+      padding: 2rem;
       text-align: justify;
-      left: 33vw;
-      top: 33vh;
-      margin: 5vh;
       width: 65vh;
       list-style: none;
+      display: flex;
+      justify-content: center;
     }
 
     tr {
-      width: 100px;
+      width: 100%;
       font-size: 20px;
+    }
+
+    .tdnome{
+      display: flex;
+      justify-content: center;
     }
 
     /* Estilo para o botão de excluir */

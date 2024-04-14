@@ -30,7 +30,7 @@ ul {
 .dp-menu ul li a{
     color: var(--cor-primaria);
     text-decoration: none;
-    padding: 10px;
+    margin: 10px;
     transition: background .3s;
 }
 
