@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de desejos</title>
-  <link rel="shortcut icon" href="/resouces/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/stylesheets/styleListaDesejos.css">
   <link rel="stylesheet" href="/stylesheets/styleMenuDrop.css">
 
@@ -53,25 +53,35 @@
         <td>Número</td>
         <td class="tdnome">Nome</td>
       </tr>
-      <tr id="linha-1">
-        <th>1</th>
-        <th>
-          <li>
-            Dragon Ball Budokkai Tenkaichi 4
-            <button class="botaoExcluir" onclick="excluirItem1(this)">
-              <img src="/resouces/Lixeira.png" alt="Lixeira">
-            </button>
-          </li>
-        </th>
-      </tr>
-      </tr>
+      
+      <% nomes.forEach((element, index) => { %>
+        <tr id="linha-<%= index + 1%>">
+          <th id="coisu"><%= index + 1 %></th>
+          <th>
+            <li>
+              Dragon Ball Budokkai Tenkaichi 4 <%= element%>
+              <button class="botaoExcluir" onclick="excluirItem(this)">
+                <img src="/resources/Lixeira.png" alt="Lixeira">
+              </button>
+            </li>
+          </th>
+        </tr>
+            
+              <script>
+                function excluirItem(botao) {
+                  const linhaParaRemover = document.querySelector("tr#linha-<%= index + 1%>");
+                  linhaParaRemover.remove();
+                }
+                </script>
+      <% }) %>
+      <!-- </tr>
       <tr id="linha-2">
         <th>2</th>
         <th>
           <li>
             Resident Evil 4 Remake
             <button class="botaoExcluir" onclick="excluirItem2(this)">
-              <img src="/resouces/Lixeira.png" alt="Lixeira">
+              <img src="/resources/Lixeira.png" alt="Lixeira">
             </button>
           </li>
         </th>
@@ -83,7 +93,7 @@
           <li>
             God Of War
             <button class="botaoExcluir" onclick="excluirItem3(this)">
-              <img src="/resouces/Lixeira.png" alt="Lixeira">
+              <img src="/resources/Lixeira.png" alt="Lixeira">
             </button>
           </li>
         </th>
@@ -99,7 +109,7 @@
             </button>
           </li>
         </th>
-      </tr>
+      </tr> -->
 
   </main>
 
@@ -110,28 +120,21 @@
             listItem.parentNode.removeChild(listItem);
         }
     </script> -->
+<!-- 
+    // function excluirItem2(botao) {
+    //   const linhaParaRemover = document.querySelector("tr#linha-2");
+    //   linhaParaRemover.remove();
+    // }
 
-  <script>
-    function excluirItem1(botao) {
-      const linhaParaRemover = document.querySelector("tr#linha-1");
-      linhaParaRemover.remove();
-    }
-
-    function excluirItem2(botao) {
-      const linhaParaRemover = document.querySelector("tr#linha-2");
-      linhaParaRemover.remove();
-    }
-
-    function excluirItem3(botao) {
-      const linhaParaRemover = document.querySelector("tr#linha-3");
-      linhaParaRemover.remove();
-    }
+    // function excluirItem3(botao) {
+    //   const linhaParaRemover = document.querySelector("tr#linha-3");
+    //   linhaParaRemover.remove();
+    // }
     
-    function excluirItem4(botao) {
-      const linhaParaRemover = document.querySelector("tr#linha-4");
-      linhaParaRemover.remove();
-    }
-  </script>
+    // function excluirItem4(botao) {
+    //   const linhaParaRemover = document.querySelector("tr#linha-4");
+    //   linhaParaRemover.remove();
+    // } -->
 
 </body>
 
