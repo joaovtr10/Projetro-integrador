@@ -7,8 +7,8 @@ const config = {
   host: "localhost",
   port: 3306,
   username: "root",
-  password: "ienh",
-  database: "sisbiblioteca",
+  password: "",
+  database: "projeto-integrador",
   define: {
     underscored: true,
   },

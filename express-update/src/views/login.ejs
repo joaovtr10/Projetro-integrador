@@ -16,13 +16,13 @@
         <form>
 
             <div class="nome-senha">
-                <label for="nome">Nome de usuário ou email:</label>
-                <input type="text" name="nome" id="nome">
-                <label for="nome">Senha:</label>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="email">Senha:</label>
                 <input type="password" name="senha" id="senha">
             </div>
             <div class="button-pai">
-                <input type="button" value="Conectar-se" class="botao">
+                <input type="button" value="Conectar-se" onclick="confirmarLogin()" class="botao">
             </div>
         </form>
 
@@ -31,6 +31,6 @@
                 <a href="/cadastro" class="cadastrar">Cadastrar-se</a>
             </div>
     </div>
-
+    <script src="../dados/login.js"></script>
 </body>
 </html>
