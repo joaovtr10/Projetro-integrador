@@ -1,7 +1,7 @@
 :root{
-    --main-bg-color: rgb(92, 92, 92);
-    --sec-bg-color: rgb(141, 141, 141) ;
-    --cor-hover: rgb(33, 107, 26);
+    --main-bg-color: rgb(255, 255, 255);
+    --sec-bg-color: rgb(220, 220, 220) ;
+    --cor-hover: rgb(26, 149, 250);
 }
 
 *{
@@ -19,7 +19,7 @@ body{
 
 input{
     margin: 25px;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: none;
 }
 
@@ -40,12 +40,14 @@ input{
 }
 
 .botao{
+    position: relative;
     margin: 5px;
     width: 175px;
     height: 45px;
     border-radius: 1rem;
     background-color: var(--main-bg-color);
     border: none;
+    top: 10px;
 }
 
 .botao:hover{
@@ -53,8 +55,10 @@ input{
 }
 
 .links{
+    position: relative;
     display: flex;
     flex-direction: column;
+    top: 20px;
 }
 
 .cadastrar,.esqueciSenha{
@@ -67,7 +71,7 @@ input{
 }
 
 .cadastrar:hover,.nome-senha input:hover,.botao:hover,.esqueciSenha:hover{
-    transition: 1s;
+    transition: 0.5s;
     transform: scale(1.1);
 }
 

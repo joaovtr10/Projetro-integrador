@@ -1,6 +1,6 @@
 :root{
-    --main-bg-color: rgb(92, 92, 92);
-    --sec-bg-color: rgb(141, 141, 141) ;
+    --main-bg-color: rgb(222, 222, 222);
+    --sec-bg-color: rgb(255, 255, 255) ;
     --cor-hover: rgb(33, 107, 26);
 }
 
@@ -11,10 +11,12 @@
 
 body{
     background-color: var(--main-bg-color);
+    overflow-x: hidden;
 }
 
 main{
-    display: flex;
+    margin-top: 20px;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     height: 96.3vh;
@@ -36,6 +38,7 @@ td{
 
 table{
     background-color: var(--sec-bg-color);
+    margin-top: 5vh;
     padding: 0.75rem;
     border-radius:1rem ;
 }
@@ -47,18 +50,23 @@ table{
 }
 
 #divBusca input {
+    position: relative;
     width: 30vw;
-    height: 17.5px;
+    height: 19px;
     border-radius: 4px;
     border: none;
+    bottom: 16px;
 }
 
 #btnBusca {
-    height: 18px;
-    width: 35px;
+    position: relative;
+    height: 19px;
+    width: 70px;
     overflow-y: hidden;
     border-radius: 0.30rem;
     border: none;
+    right: 69px;
+    bottom: 16px;
 }
 
 #btnBusca img{

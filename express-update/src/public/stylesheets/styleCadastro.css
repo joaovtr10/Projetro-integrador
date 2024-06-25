@@ -1,12 +1,16 @@
 :root{
-    --main-bg-color: rgb(92, 92, 92);
-    --sec-bg-color: rgb(141, 141, 141) ;
-    --cor-hover: rgb(33, 107, 26);
+    --main-bg-color: rgb(255, 255, 255);
+    --sec-bg-color: rgb(220, 220, 220) ;
+    --cor-hover: rgb(26, 149, 250);
 }
 
 *{
     margin: 0px;
     padding: 0px;
+}
+
+.informacoes {
+    margin-top: 10px;
 }
 
 .informacoes input,label,.fimCadastro{
@@ -24,7 +28,7 @@
 }
 
 .fimCadastro:hover{
-    transition: 1s;
+    transition: 0.5s;
     transform: scale(1.1);
     background-color: var(--cor-hover);
 }
@@ -53,6 +57,7 @@ main{
 }
 
 .cadastre-se{
+
     align-self: center;
     font-size: 40px;
 }

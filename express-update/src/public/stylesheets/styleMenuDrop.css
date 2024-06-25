@@ -25,6 +25,7 @@ ul {
 .dp-menu{
     display: flex;
     width: 100vw;
+    height: 4vw;
     flex-direction: row;
     justify-content: center;
     background-color: var(--cor-Fundo);
@@ -33,6 +34,9 @@ ul {
 .dp-menu ul li {
     display: inline;
     position: relative;
+    top: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .dp-menu ul li a{
