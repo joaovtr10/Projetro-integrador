@@ -4,7 +4,7 @@ async function retornaSimplificado(req, res, arquivo, dados) {
 }
 
 async function listaDeDesejos(req, res) {
-    return retornaSimplificado(req, res, 'listaDeDesejos',{ nomes :['oi','aaa','aaa','aaa']})
+    return retornaSimplificado(req, res, 'listaDeDesejos',{ nomes :['oi','aaa','aaa','aaa','aaa']})
 }
 
 async function menu(req, res) {
