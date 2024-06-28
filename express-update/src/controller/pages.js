@@ -19,4 +19,8 @@ async function login(req, res) {
     return retornaSimplificado(req, res, 'login', {})
 }
 
-export { retornaSimplificado, listaDeDesejos , menu,login,cadastro }
+async function contato(req, res) {
+    return retornaSimplificado(req, res, 'contato', {})
+}
+
+export { retornaSimplificado, listaDeDesejos , menu, login, cadastro, contato }
