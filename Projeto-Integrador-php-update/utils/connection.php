@@ -2,7 +2,7 @@
     $host = "localhost";
     $usuario = "root";
     $senha = "";
-    $base = "Projeto-Integrador";
+    $base = "projeto-integrador";
 
     $connection = mysqli_connect($host,$usuario,$senha,$base);
 ?>

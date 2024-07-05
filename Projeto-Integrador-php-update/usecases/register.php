@@ -12,5 +12,5 @@ if($password != $confPassword){
 }else{
   mysqli_query($connection, "INSERT INTO usuarios(nome, email, senha) VALUES('" . $name . "','" . $email . "','" . $password . "')");
 }
-
+header("location: ../view/login.php");
 ?>

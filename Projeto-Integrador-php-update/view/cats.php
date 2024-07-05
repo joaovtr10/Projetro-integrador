@@ -21,7 +21,8 @@
 
     <header>
         <?php
-            include("../utils/menudrop.php")
+            include("../utils/menudrop.php");
+            $genero = $_GET['genero'];
         ?>
 
     </header>
@@ -31,7 +32,7 @@
         <!--Tabela de jogos-->
             <div class="row">
                 <?php
-                    $dJogos = mysqli_query($connection, "select * from jogos");
+                    $dJogos = mysqli_query($connection, "select * from jogos where genero='".$genero."';");
                     while($jogos = mysqli_fetch_array($dJogos)): 
                 ?>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 ml-5 mr-5 mb-5">

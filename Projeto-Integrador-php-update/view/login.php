@@ -13,22 +13,22 @@
 
     <div class="possicao">
         <p class="login"><strong>LOGIN</strong></p>
-        <form>
+        <form action="../usecases/validate.php" method="post">
 
             <div class="nome-senha">
-                <label for="nome">Nome de usuário ou email:</label><br>
-                <input type="text" name="nome" id="nome"><br>
-                <label for="nome">Senha:</label><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="senha">Senha:</label><br>
                 <input type="password" name="senha" id="senha">
             </div>
 
-                <input type="button" value="Conectar-se" class="botao">
+                <button type="submit">Conectar-se</button>
 
         </form>
 
             <div class="links">
                 <a href="" class="esqueciSenha">Esqueci a senha</a><br>
-                <a href="cadastro.html" class="cadastrar">Cadastrar-se</a>
+                <a href="cadastro.php" class="cadastrar">Cadastrar-se</a>
             </div>
     </div>
 
