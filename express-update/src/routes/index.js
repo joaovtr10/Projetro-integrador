@@ -1,5 +1,5 @@
 import express from "express";
-import { listaDeDesejos, menu , login , cadastro } from "../controller/pages.js";
+import { listaDeDesejos, menu , login , cadastro, contato } from "../controller/pages.js";
 
 const router = express.Router()
 
@@ -12,6 +12,7 @@ router.get("/", menu);
 router.get("/cadastro", cadastro);
 router.get("/login", login);
 router.get("/listaDeDesejos", listaDeDesejos);
+router.get("/contato", contato);
 
 
 
