@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de desejos</title>
   <link rel="shortcut icon" href="/resouces/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/stylesheets/styleListaDesejos.css">
-  <link rel="stylesheet" href="/stylesheets/styleMenuDrop.css">
+  <link rel="stylesheet" href="../stylesheets/styleMenuDrop.css">
+  <link rel="stylesheet" href="../stylesheets/styleListaDesejos.css">
 
 </head>
 
@@ -15,31 +15,14 @@
 
   <header>
 
-    <nav class="dp-menu">
-      <ul class="dp-ul">
-        <div>
-          <li><a href="/">Home</a></li>
-          <li><a href="#">categorias</a>
-            <ul class="ulcat">
-              <li><a href="#">cat1</a></li>
-              <li><a href="#">cat2</a></li>
-              <li><a href="#">cat3</a></li>
+  <nav class="dp-menu">
+            <ul class="dp-ul" style="z-index: 10">
+                <div>
+                    <li><a href="../view/menu.php">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                </div>
             </ul>
-
-          </li>
-
-          <li><a href="/listaDeDesejos">Lista de desejos</a>
-          </li>
-          <li><a href="#">Contato</a></li>
-        </div>
-
-        </div>
-        <div>
-          <li><a href="/cadastro">Cadastrar-se</a></li>
-          <li class="entrar"><a href="/login">Entrar </a></li>
-        </div>
-      </ul>
-    </nav>
+        </nav>
 
   </header>
 
@@ -76,9 +59,10 @@
         <th>
           <li>
             <?php print($lista['jogo']) ?>
-            <form action="../usecases/delWishList.php">
+            <form action="../usecases/delWishList.php" method="post">
+              <input type="text" value="<?php print($lista['ID']) ?>" name="ID" style="display: none">
               <button class="botaoExcluir" type="submit" >
-                <img src="/resources/Lixeira.png" alt="Lixeira">
+                <img src="../resources/Lixeira.png" alt="Lixeira">
               </button>
             </form>
           </li>

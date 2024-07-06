@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="/stylesheets/styleLogin.css">
 </head>
 <body>
-    
+    <?php
+        session_start();
+        if(empty($_SESSION['id'])){
+            header('location: cadastro.php');
+        }
+    ?>
     
 
     <div class="possicao">
@@ -27,7 +32,6 @@
         </form>
 
             <div class="links">
-                <a href="" class="esqueciSenha">Esqueci a senha</a><br>
                 <a href="cadastro.php" class="cadastrar">Cadastrar-se</a>
             </div>
     </div>

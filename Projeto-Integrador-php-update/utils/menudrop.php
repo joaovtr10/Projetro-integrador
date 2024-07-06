@@ -1,7 +1,7 @@
 <nav class="dp-menu">
             <ul class="dp-ul" style="z-index: 10">
                 <div>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="../view/menu.php">Home</a></li>
                     <li><a href="#">categorias</a>
                         <ul class="ulcat">
                             <?php
@@ -25,16 +25,18 @@
 
                 <li>
                     <div id="divBusca">
-                        <div class="flex">
-                            <input type="text" id="txtBusca" placeholder="Buscar..." /><br>
-                            <button id="btnBusca"><img src="../resources/lupa.png" alt="Imagem de lupa"></button>
-                        </div>
+                        <form action="../view/pesquisado.php" method="post">
+                            <div class="flex">
+                                <input type="text" name="pesquisa" id="txtBusca" placeholder="Buscar..." /><br>
+                                <button  type="submit" id="btnBusca"><img src="../resources/lupa.png" alt="Imagem de lupa"></button>
+                            </div>
+                        </form>
                     </div>
                 </li>
                 </div>
                 <div>
                     <li><a href="../view/cadastro.php">Cadastrar-se</a></li>
-                    <li class="entrar"><a href="/login">Entrar </a></li>
+                    <li class="entrar"><a href="../view/login.php">Entrar </a></li>
                 </div>
             </ul>
         </nav>
