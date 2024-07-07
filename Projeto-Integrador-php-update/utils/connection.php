@@ -1,7 +1,7 @@
 <?php
     $host = "localhost";
     $usuario = "root";
-    $senha = "";
+    $senha = "cid1@";
     $base = "projeto-integrador";
 
     $connection = mysqli_connect($host,$usuario,$senha,$base);

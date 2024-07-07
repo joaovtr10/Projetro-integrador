@@ -1,19 +1,46 @@
 :root{
     --main-bg-color: rgb(255, 255, 255);
-    --sec-bg-color: rgb(220, 220, 220) ;
+    --sec-bg-color: rgb(220, 220, 220);
     --cor-hover: rgb(26, 149, 250);
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.possicao{
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: var(--sec-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .informacoes {
     margin-top: 10px;
 }
 
-.informacoes input,label,.fimCadastro{
+.informacoes input, label, .fimCadastro{
     margin: 1rem;
     font-size: 25px;
     border: none;
@@ -38,26 +65,7 @@ input:hover{
     transform: scale(1.1);
 }
 
-main{
-    background-color: var(--main-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.possicao{
-    border-radius: 1rem;
-    padding: 1.5rem;
-    background-color: var(--sec-bg-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
 .cadastre-se{
-
     align-self: center;
     font-size: 40px;
 }
@@ -66,4 +74,5 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }

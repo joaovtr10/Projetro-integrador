@@ -5,16 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" href="resouces/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/stylesheets/styleLogin.css">
+    <link rel="stylesheet" href="../stylesheets/styleLogin.css">
 </head>
 <body>
-    <?php
-        session_start();
-        if(empty($_SESSION['id'])){
-            header('location: cadastro.php');
-        }
-    ?>
-    
 
     <div class="possicao">
         <p class="login"><strong>LOGIN</strong></p>

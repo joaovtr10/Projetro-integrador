@@ -1,70 +1,149 @@
-:root{
+:root {
   --main-bg-color: rgb(255, 255, 255);
-  --sec-bg-color: rgb(220, 220, 220) ;
+  --dp-color: rgb(0, 0, 0);
+  --sec-bg-color: rgb(220, 220, 220);
   --cor-hover: rgb(33, 107, 26);
+  --border-color: rgb(200, 200, 200);
+  --text-color: rgb(50, 50, 50);
+  --font-family: 'Arial', sans-serif;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--main-bg-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 96.3vh;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--dp-color);
+  height: 4vw;
+  z-index: 1000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Ajuste para crescer para baixo */
+  min-height: 100vh; /* Altura mínima para ocupar toda a altura da tela */
+  padding: 20px;
+  margin-top: 4vw; /* Adiciona margem igual à altura do header */
+  overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor-hover);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 2, 2, 0.793);
+  opacity: .5;
 }
 
 /* Configuração da Tabela */
-    table {
-      background-color: var(--sec-bg-color);
-      border-radius: 1rem;
-      padding: 2rem;
-      text-align: justify;
-      width: 65vh;
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
+table {
+  background-color: var(--sec-bg-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-top: 20px; /* Espaço entre o conteúdo anterior e a tabela */
+}
 
-    tr {
-      width: 100%;
-      font-size: 20px;
-    }
+table, th, td {
+  border: 1px solid var(--border-color);
+}
 
-    .tdnome{
-      display: flex;
-      justify-content: center;
-    }
+th, td {
+  padding: 10px;
+  text-align: left;
+}
 
-    /* Estilo para o botão de excluir */
-    .botaoExcluir {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
+th {
+  background-color: var(--main-bg-color);
+}
 
-    .botaoExcluir img {
-      width: 20px;
-    }
+tr:nth-child(even) {
+  background-color: var(--sec-bg-color);
+}
 
-    /* Estilo quando o mouse passa sobre o item de lista */
-    li:hover .botaoExcluir {
-      display: inline-block;
-    }
+/* Estilo para o botão de adicionar */
+.botaoAdicionar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor-hover);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
 
-    /* Estilo para a lista e os itens de lista */
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+.botaoAdicionar:hover {
+  background-color: rgba(33, 107, 26, 0.793);
+  opacity: .5;
+}
 
-    li {
-      margin: 5px 0;
-    }
+/* Estilo para o botão de excluir */
+.botaoExcluir {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botaoExcluir img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.lista-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo para a lista e os itens de lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}

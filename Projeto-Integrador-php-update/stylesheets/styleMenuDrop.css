@@ -1,72 +1,71 @@
-/* Menu dropdown */
-
-:root{
-    --cor-Fundo: rgb(0, 0, 0);
-    --cor-hover: rgb(33, 107, 26);
-    --cor-primaria: white;
+/* Estilo para o menu dropdown */
+.dp-menu {
+    background-color: #333;
+    padding: 10px;
+    font-family: Arial, sans-serif;
 }
 
-.dp-menu .dp-ul {
+.dp-ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.dp-menu ul {
-    background-color: var(--cor-Fundo);
+.dp-ul li {
+    display: block;
+    margin-bottom: 10px; 
 }
 
-ul {
-    background-color: var( --cor-Fundo);
-}
-
-.dp-menu{
-    display: flex;
-    width: 100vw;
-    height: 4vw;
-    flex-direction: row;
-    justify-content: center;
-    background-color: var(--cor-Fundo);
-}
-
-.dp-menu ul li {
-    display: inline;
-    position: relative;
-    top: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.dp-menu ul li a{
-    color: var(--cor-primaria);
+.dp-ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    margin: 11.5px;
-    transition: background .3s;
 }
 
-.dp-menu ul li a:hover {
-    padding: 1.5px;
-    margin: 10px;
-    background-color: var(--cor-hover);
+.dp-ul li a:hover {
+    background-color: #555;
 }
 
-/*Sub menu*/
-
-.dp-menu ul .ulcat {
-    display: none;
-    left: 0;
+#divBusca {
+    margin-top: 7px;
 }
 
-.dp-menu ul li:hover .ulcat {
-    display: block;
+#txtBusca {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.dp-menu ul .ulcat {
-    width: 90px;
+#btnBusca {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.dp-menu ul .ulcat li a {
-    display: block;
+#btnBusca img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+#abc {
+    color: #333; 
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+#idd {
+    background-color: black;
+    color: white;
+}
+
+#idd:hover {
+    background-color: red;
 }

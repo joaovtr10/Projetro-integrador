@@ -13,13 +13,19 @@
 
 <body>
 
+  <?php
+        session_start();
+        if(empty($_SESSION['id'])){
+            header('location: login.php');
+        }
+    ?>
+
   <header>
 
   <nav class="dp-menu">
             <ul class="dp-ul" style="z-index: 10">
                 <div>
                     <li><a href="../view/menu.php">Home</a></li>
-                    <li><a href="#">Contato</a></li>
                 </div>
             </ul>
         </nav>
@@ -29,9 +35,6 @@
 
 
   <main>
-      <?php
-      session_start();
-      ?>
       <form action="../usecases/addWishList.php" method="post">
 
       <input type="text" placeholder="Digite o nome do jogo aqui" name="addJogo">

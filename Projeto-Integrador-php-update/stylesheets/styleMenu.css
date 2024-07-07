@@ -40,7 +40,7 @@ table{
     background-color: var(--sec-bg-color);
     margin-top: 5vh;
     padding: 0.75rem;
-    border-radius:1rem ;
+    border-style: solid;
 }
 
 /* Configuração da caixa de pesquisa */

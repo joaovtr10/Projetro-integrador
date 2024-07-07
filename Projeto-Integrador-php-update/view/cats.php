@@ -22,7 +22,7 @@
     <header>
         <?php
             include("../utils/menudrop.php");
-            $genero = $_GET['genero'];
+            $genero = $_POST['games'];
         ?>
 
     </header>

@@ -8,33 +8,31 @@
     <link rel="stylesheet" href="../stylesheets/styleCadastro.css">
 </head>
 <body>
+    <main>
+        <div class="possicao">
+            <p class="cadastre-se"><strong>CADASTRE-SE</strong></p>
+            <form action="../usecases/register.php" method="post">
 
-    
+                <div class="informacoes">
 
-    <div class="possicao">
-        <p class="cadastre-se"><strong>CADASTRE-SE</strong></p>
-        <form action="../usecases/register.php" method="post">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email"><br>
 
-            <div class="informacoes">
+                    <label for="nome">Nome de usuário:</label><br>
+                    <input type="text" name="nome" id="nome"><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email"><br>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" name="senha" id="senha"><br>
 
-                <label for="nome">Nome de usuário:</label><br>
-                <input type="text" name="nome" id="nome"><br>
+                    <label for="confSenha">Digite novamente:</label><br>
+                    <input type="password" name="confSenha" id="confSenha"><br>
 
-                <label for="senha">Senha:</label><br>
-                <input type="password" name="senha" id="senha"><br>
-
-                <label for="confSenha">Confirmar senha:</label><br>
-                <input type="password" name="confSenha" id="confSenha"><br>
-
-            </div>
-
-                <button type="submit" value="Concluir cadastro" class="fimCadastro">
-
-        </form>
-    </div>
-
+                </div>
+                
+                <button type="submit" value="Concluir cadastro" class="fimCadastro">Concluir cadastro</button>
+            
+            </form>
+        </div>
+    </main>
 </body>
 </html>
