@@ -9,13 +9,8 @@
 </head>
 <body>
 
-        <?php
-            include("../utils/menudrop.php")
-        ?>
-
     <main>
         <div class="possicao">
-            <a href="../view/menu.php" class="voltar">&lt; Voltar</a>
             <p class="cadastre-se"><strong>CADASTRE-SE</strong></p>
             <form action="../usecases/register.php" method="post">
 
@@ -36,8 +31,8 @@
                 </div>
                 
                 <button type="submit" value="Concluir cadastro" class="fimCadastro">Concluir cadastro</button>
-
             </form>
+            <button onclick="window.location.href='menu.php'" class="homeButton">Home</button>
         </div>
     </main>
 </body>

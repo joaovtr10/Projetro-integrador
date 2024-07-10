@@ -1,6 +1,5 @@
 :root {
   --main-bg-color: rgb(255, 255, 255);
-  --dp-color: rgb(0, 0, 0);
   --sec-bg-color: rgb(220, 220, 220);
   --cor-hover: rgb(33, 107, 26);
   --border-color: rgb(200, 200, 200);
@@ -21,25 +20,15 @@ body {
   padding: 0;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: var(--dp-color);
-  height: 4vw;
-  z-index: 1000;
-}
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Ajuste para crescer para baixo */
-  min-height: 100vh; /* Altura mínima para ocupar toda a altura da tela */
+  justify-content: flex-start;
+  min-height: 100vh;
   padding: 20px;
-  margin-top: 4vw; /* Adiciona margem igual à altura do header */
-  overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+  margin-top: 4vw;
+  overflow-y: auto; 
 }
 
 form {

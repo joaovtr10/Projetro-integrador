@@ -41,7 +41,7 @@
             <?php
             }else{
             ?>
-                <li><a href="../utils/logout.php">Logout</a></li>
+                <li><a href="../utils/logout.php"><img class="logout-icon" src="../resources/logout.png" alt="Logout"></a></li>
             <?php
             }
             ?>

@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (empty($_SESSION['id'])) {
+    header('location: login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,32 +14,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de desejos</title>
   <link rel="shortcut icon" href="/resouces/favicon.ico" type="image/x-icon">
-  <!-- <link rel="stylesheet" href="../stylesheets/styleMenuDrop.css"> -->
   <link rel="stylesheet" href="../stylesheets/styleListaDesejos.css">
-
 </head>
 
 <body>
 
-  <?php
-        session_start();
-        if(empty($_SESSION['id'])){
-          header('location: login.php');
-        }
-        include("../utils/menudrop.php")
-        ?>
-
-
+  <?php 
+      include("../utils/menudrop.php");
+  ?>
 
   <main>
       <form action="../usecases/addWishList.php" method="post">
-
-      <input type="text" placeholder="Digite o nome do jogo aqui" name="addJogo">
-      <button type="submit">Adicionar</button>
-
+        <input type="text" placeholder="Digite o nome do jogo aqui" name="addJogo">
+        <button type="submit">Adicionar</button>
       </form>
-
-
 
     <!--Tabela da lsita de desejos-->
     <table border="1">
@@ -44,16 +40,16 @@
           $id_user = $_SESSION['id'];
           $dados = mysqli_query($connection, "SELECT * FROM listadesejos WHERE id_user = '$id_user'");
           $i = 1;
-          while($lista = mysqli_fetch_array($dados)):
+          while ($lista = mysqli_fetch_array($dados)):
       ?>
       <tr id="linha-1">
-        <th><?php print($i) ?></th>
+        <th><?php echo $i; ?></th>
         <th>
           <li>
-            <?php print($lista['jogo']) ?>
+            <?php echo $lista['jogo']; ?>
             <form action="../usecases/delWishList.php" method="post">
-              <input type="text" value="<?php print($lista['ID']) ?>" name="ID" style="display: none">
-              <button class="botaoExcluir" type="submit" >
+              <input type="hidden" value="<?php echo $lista['ID']; ?>" name="ID">
+              <button class="botaoExcluir" type="submit">
                 <img src="../resources/Lixeira.png" alt="Lixeira">
               </button>
             </form>
@@ -61,13 +57,12 @@
         </th>
       </tr>
       <?php
-      $i = $i + 1;
-      endwhile;
+          $i++;
+          endwhile;
       ?>
-  </table>
+    </table>
 
   </main>
-
 
 </body>
 

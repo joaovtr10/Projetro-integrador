@@ -40,37 +40,37 @@ main{
     margin-top: 10px;
 }
 
-.informacoes input, label, .fimCadastro{
+.informacoes input, label, .fimCadastro, .homeButton {
     margin: 1rem;
     font-size: 25px;
     border: none;
     border-radius: 1rem;
 }
 
-.fimCadastro{
+.fimCadastro, .homeButton {
     background-color: var(--main-bg-color);
     height: 3rem;
     width: 15rem;
     align-self: center;
 }
 
-.fimCadastro:hover{
+.fimCadastro:hover, .homeButton:hover {
     transition: 0.5s;
     transform: scale(1.1);
     background-color: var(--cor-hover);
 }
 
-input:hover{
+input:hover {
     transition: 1s;
     transform: scale(1.1);
 }
 
-.cadastre-se{
+.cadastre-se {
     align-self: center;
     font-size: 40px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
