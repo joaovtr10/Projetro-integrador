@@ -1,7 +1,6 @@
 :root{
-    --main-bg-color: rgb(222, 222, 222);
+    --main-bg-color: rgb(255, 255, 255);
     --sec-bg-color: rgb(255, 255, 255) ;
-    --cor-hover: rgb(33, 107, 26);
 }
 
 *{
@@ -16,63 +15,8 @@ body{
 
 main{
     margin-top: 20px;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     height: 96.3vh;
 }
 
-/* Configuração da tabela */
-th{
-    padding: 5px;
-    width: 50px;
-    height: 50px;
-}
-
-td{
-    padding: 5px;
-    width: 200px;
-    font-size: 20px;
-    text-align: center;
-}
-
-table{
-    background-color: var(--sec-bg-color);
-    margin-top: 5vh;
-    padding: 0.75rem;
-    border-style: solid;
-}
-
-/* Configuração da caixa de pesquisa */
-
-#divBusca .flex{
-    display: flex;
-}
-
-#divBusca input {
-    position: relative;
-    width: 30vw;
-    height: 19px;
-    border-radius: 4px;
-    border: none;
-    bottom: 16px;
-}
-
-#btnBusca {
-    position: relative;
-    height: 19px;
-    width: 70px;
-    overflow-y: hidden;
-    border-radius: 0.30rem;
-    border: none;
-    right: 69px;
-    bottom: 16px;
-}
-
-#btnBusca img{
-    width: 30%;
-}
-
-.card img {
-    height: 200px;
-}

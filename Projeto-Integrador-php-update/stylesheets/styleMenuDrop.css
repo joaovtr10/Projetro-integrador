@@ -1,71 +1,156 @@
-/* Estilo para o menu dropdown */
+/* Menu dropdown */
+:root{
+    --cor-Fundo: rgb(0, 0, 0);
+    --cor-hover: rgb(33, 107, 26);
+    --cor-botao: rgb(39, 213, 24);
+    --cor-primaria: white;
+}
+
 .dp-menu {
-    background-color: #333;
-    padding: 10px;
-    font-family: Arial, sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 4vw;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--cor-Fundo);
 }
 
-.dp-ul {
+.dp-menu .dp-ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.dp-ul li {
-    display: block;
-    margin-bottom: 10px; 
+.dp-menu ul {
+    background-color: var(--cor-Fundo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.dp-ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.dp-menu ul li {
+    display: inline-block;
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-primaria);
     text-decoration: none;
+    margin: 11.5px;
+    transition: background .3s;
 }
 
-.dp-ul li a:hover {
-    background-color: #555;
+.dp-menu ul li a:hover {
+    padding: 1.5px;
+    margin: 10px;
+    background-color: var(--cor-hover);
 }
 
-#divBusca {
-    margin-top: 7px;
+/* Sub menu */
+.dp-menu ul .ulcat {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--cor-Fundo);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
 }
 
-#txtBusca {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.dp-menu ul li:hover .ulcat {
+    display: block;
 }
 
-#btnBusca {
-    padding: 8px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.dp-menu ul .ulcat li a {
+    display: block;
+    padding: 10px;
+    background-color: var(--cor-Fundo);
+    color: var(--cor-primaria);
 }
 
-#btnBusca img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
+/* Alinhar o formulário */
+.form-container {
+    display: flex;
+    align-items: center;
 }
 
-#abc {
-    color: #333; 
+#games {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
     font-size: 14px;
-    padding: 5px 10px;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
+    border: 1px solid var(--cor-hover);
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    cursor: pointer;
+    width: 200px; /* Ajuste conforme necessário */
+}
+
+#games option {
+    padding: 10px;
+    background-color: var(--cor-Fundo); /* Cor de fundo das opções */
+    color: white; /* Cor do texto das opções */
+}
+
+#games:hover, #games:focus {
+    outline: none;
+    border-color: var(--cor-hover); /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(33, 107, 26, 0.5); /* Sombra ao focar */
 }
 
 #idd {
-    background-color: black;
-    color: white;
+    background-color: var(--cor-Fundo);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-hover);
+    margin-left: 10px;
 }
 
 #idd:hover {
-    background-color: red;
+    background-color:  var(--cor-hover);
 }
+
+#games {}
+
+/* Configuração da caixa de pesquisa */
+
+#divBusca input {
+    width: 30vw;
+    height: 19px;
+    border-radius: 4px;
+    border: none;
+}
+
+#btnBusca {
+    position: relative;
+    height: 20px;
+    width: 70px;
+    overflow-y: hidden;
+    border-radius: 0.30rem;
+    border: none;
+    right: 73px;
+    top: 2px;
+}
+
+#btnBusca img{
+    position: relative;
+    width: 30%;
+    bottom: 4px;
+} 
+
+#btnBusca:hover {
+    background-color: var(--cor-botao);
+    opacity: 0.8;
+    transition: .4s;
+}
+

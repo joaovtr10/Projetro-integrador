@@ -1,16 +1,20 @@
-<link rel="stylesheet" href="../stylesheets/styleMenuDrop.css">
+<style>
+    <?php
+            include("../stylesheets/styleMenuDrop.css");
+        ?>
+</style>
 <nav class="dp-menu">
     <ul class="dp-ul">
         <li><a href="../view/menu.php">Home</a></li>
         <li>
-            <form action="../view/cats.php" method="post">
+            <form action="../view/cats.php" method="post" class="form-container">
                 <select name="games" id="games">
                     <?php
                     include('connection.php');
                     $dcats = mysqli_query($connection, "SELECT genero, COUNT(genero) FROM jogos GROUP BY genero;");
                     while ($cats = mysqli_fetch_array($dcats)) :
                     ?>
-                        <option id="abc" name="genero" value="<?php print($cats['genero']) ?>"><?php print($cats['genero']) ?></option>
+                        <option name="genero" value="<?php print($cats['genero']) ?>"><?php print($cats['genero']) ?></option>
                     <?php
                     endwhile
                     ?>
@@ -31,3 +35,4 @@
         <li class="entrar"><a href="../view/login.php">Entrar </a></li>
     </ul>
 </nav>
+
