@@ -16,21 +16,10 @@
   <?php
         session_start();
         if(empty($_SESSION['id'])){
-            header('location: login.php');
+          header('location: login.php');
         }
-    ?>
-
-  <header>
-
-  <nav class="dp-menu">
-            <ul class="dp-ul" style="z-index: 10">
-                <div>
-                    <li><a href="../view/menu.php">Home</a></li>
-                </div>
-            </ul>
-        </nav>
-
-  </header>
+        include("../utils/menudrop.php")
+        ?>
 
 
 

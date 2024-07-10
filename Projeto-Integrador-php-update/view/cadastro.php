@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../stylesheets/styleCadastro.css">
 </head>
 <body>
+
+        <?php
+            include("../utils/menudrop.php")
+        ?>
+
     <main>
         <div class="possicao">
             <a href="../view/menu.php" class="voltar">&lt; Voltar</a>

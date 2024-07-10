@@ -1,5 +1,6 @@
 <style>
-    <?php
+        <?php
+            session_start();
             include("../stylesheets/styleMenuDrop.css");
         ?>
 </style>
@@ -31,8 +32,24 @@
                 </form>
             </div>
         </li>
-        <li><a href="../view/cadastro.php">Cadastrar-se</a></li>
-        <li class="entrar"><a href="../view/login.php">Entrar </a></li>
+        <?php 
+            if(empty($_SESSION['id'])){
+                ?>
+
+                <li><a href="../view/cadastro.php">Cadastrar-se</a></li>
+                <li class="entrar"><a href="../view/login.php">Entrar </a></li>
+            <?php
+            }else{
+            ?>
+                <li><a href="../utils/logout.php">Logout</a></li>
+            <?php
+            }
+            ?>
     </ul>
 </nav>
 
+<!-- Warning
+: session_start(): Session cannot be started after headers have already been sent in
+C:\xampp\htdocs\Projeto-Integrador-php-update\utils\menudrop.php
+on line
+35 -->
