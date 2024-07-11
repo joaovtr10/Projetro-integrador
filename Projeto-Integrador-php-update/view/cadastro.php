@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="../stylesheets/styleCadastro.css">
 </head>
 <body>
+    <header>
+        <?php
+            include("../utils/menudrop.php")
+        ?>
+    </header>
 
     <main>
         <div class="possicao">

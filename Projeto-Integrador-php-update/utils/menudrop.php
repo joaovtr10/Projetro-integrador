@@ -47,9 +47,3 @@
             ?>
     </ul>
 </nav>
-
-<!-- Warning
-: session_start(): Session cannot be started after headers have already been sent in
-C:\xampp\htdocs\Projeto-Integrador-php-update\utils\menudrop.php
-on line
-35 -->

@@ -162,6 +162,6 @@
 
 .dp-menu ul li a[href="../utils/logout.php"]:hover {
     background-color: transparent;
-    padding: 15px; 
-    margin: 11.5px;
+    transition-duration: 300ms;
+    opacity: 0.2;
 }

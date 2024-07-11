@@ -13,7 +13,7 @@ if (empty($_SESSION['id'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de desejos</title>
-  <link rel="shortcut icon" href="/resouces/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../resouces/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../stylesheets/styleListaDesejos.css">
 </head>
 
